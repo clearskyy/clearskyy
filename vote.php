@@ -24,14 +24,40 @@ include_once '../crumpocolypse/dbCon.php'
 
 		foreach($review_rows as $row){
 			$post_url = $row['url'];
-			$vote_count = $con->prepare("SELECT COUNT(*) FROM vote WHERE post_id = ?");
-			$vote_count -> bind_param("s",$post_url); $vote_count -> execute();
-			$vote_count -> bind_result($votes); $vote_count -> store_result();
-			$vote_count -> fetch();
-				 
+			$up = "u";
+			$down = "d";
+			$downvote_count = $con->prepare("SELECT COUNT(*) FROM vote WHERE post_id = ? AND vote.vote = ?");
+			$downvote_count -> bind_param("ss",$post_url,$down); $downvote_count -> execute();
+			$downvote_count -> bind_result($downvotes); $downvote_count -> store_result();
+			$downvote_count -> fetch();
+			$upvote_count = $con->prepare("SELECT COUNT(*) FROM vote WHERE post_id = ? and vote.vote = ?");
+			$upvote_count -> bind_param("ss",$post_url,$up); $upvote_count -> execute();
+			$upvote_count -> bind_result($upvotes); $upvote_count -> store_result();
+			$upvote_count -> fetch();
+
+			$votes = $upvotes - $downvotes;
+			
 			echo '
 				<tr>
-					<td>'.$votes.'</td>
+					<td>';
+						if( $downvotes > $upvotes ){
+							echo '<span class="neg">'.$votes.'</span></td>';
+						}else{
+							echo '<span class="pos">'.$votes.'</span></td>';
+						}
+						
+					
+					$didTheyVote = $con->prepare("SELECT COUNT(*) FROM vote WHERE post_id = ? and user_id = ?");
+					$didTheyVote -> bind_param("ss",$post_url,$_SERVER['REMOTE_ADDR']); $didTheyVote -> execute();
+					$didTheyVote -> bind_result($didTheyCount); $didTheyVote -> store_result();
+					$didTheyVote -> fetch();
+					
+					if($didTheyCount == 1){
+						echo '<td>&nbsp;</td><td>&nbsp;</td>';
+					}else{
+					
+					echo'
+						
 					<td>
 						<a href="#" class="upvote">
 							<img src="http://clearskyy.net/crumpocolypse/upload/triUp.png" />
@@ -43,9 +69,13 @@ include_once '../crumpocolypse/dbCon.php'
 						<a href="#" class="downvote">
 							<img src="http://clearskyy.net/crumpocolypse/upload/triDown.png" />
 							<input type="hidden" value="'.$row['url'].'" class="URL" />
-							<input type="hidden" value="u" class="upOrDown" />
+							<input type="hidden" value="d" class="upOrDown" />
 						</a>
-					</td>
+					</td>';
+					
+					}
+					
+					echo'
 					<td>
 						<a href="'.$row['url'].'">'.$row['title'].'</a>
 					</td>
@@ -80,6 +110,9 @@ include_once '../crumpocolypse/dbCon.php'
 			$('#voteValue').val($(this).children('.upOrDown').val());
 			voteform.submit();
 		});
+		
+		$('.pos').css("color", "#09c");
+		$('.neg').css("color", "#d00");
 	});
 	</script>
 
