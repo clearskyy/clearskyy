@@ -6,7 +6,7 @@ include_once '../crumpocolypse/dbCon.php'
 ?>
 
 <!doctype html><html><head>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
 
 	<title>vote.php</title>
 </head><body>
@@ -16,14 +16,14 @@ include_once '../crumpocolypse/dbCon.php'
 		
 		<?
 
-		$rrquery = "SELECT * FROM reviews ORDER BY date DESC";
-		$rrresult = $con->query($rrquery);
-		while($rrrrow = $rrresult->fetch_array()){ $rrrrows[] = $rrrrow; }
+		$review_query = "SELECT * FROM reviews ORDER BY date DESC";
+		$review_result = $con->query($review_query);
+		while($row = $review_result->fetch_array()){ $review_rows[] = $row; }
 
 		$i = 1;
 
-		foreach($rrrrows as $rrrrow){
-			$post_url = $rrrrow['url'];
+		foreach($review_rows as $row){
+			$post_url = $row['url'];
 			$vote_count = $con->prepare("SELECT COUNT(*) FROM vote WHERE post_id = ?");
 			$vote_count -> bind_param("s",$post_url); $vote_count -> execute();
 			$vote_count -> bind_result($votes); $vote_count -> store_result();
@@ -35,7 +35,7 @@ include_once '../crumpocolypse/dbCon.php'
 					<td><a onclick="voteform.submit();" href="#" id="upvote'.$i.'" ><img src="http://clearskyy.net/crumpocolypse/upload/triUp.png" /></a></td>
 					<td><a onclick="voteform.submit();" href="#" id="downvote'.$i.'" ><img src="http://clearskyy.net/crumpocolypse/upload/triDown.png" /></a></td>
 					<td>
-						<a href="'.$rrrrow['url'].'">'.$rrrrow['title'].'</a>
+						<a href="'.$row['url'].'">'.$row['title'].'</a>
 					</td>
 					
 				</tr>
@@ -47,7 +47,8 @@ include_once '../crumpocolypse/dbCon.php'
 					});
 				</script>
 					
-				<input type="hidden" name="vote" id="vote" value="'.$rrrrow['url'].'" />
+				<input type="hidden" name="vote" id="vote" />
+				<input type="hidden" name="posturl" id="posturl" value="'.$row['url'].'" />
 					
 				';
 					
@@ -58,7 +59,7 @@ include_once '../crumpocolypse/dbCon.php'
 
 		</table>
 
-		<input type="hidden" name="posturl" id="posturl" />
+		
 				
 	</form>
 
