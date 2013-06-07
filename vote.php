@@ -32,14 +32,27 @@ include_once '../crumpocolypse/dbCon.php'
 			echo '
 				<tr>
 					<td>'.$votes.'</td>
-					<td><a onclick="voteform.submit();" href="http://clearskyy.net/alpha/cast-vote.php?posturl='.$row[url].'&vote=u"><img src="http://clearskyy.net/crumpocolypse/upload/triUp.png" /></a></td>
-					<td><a onclick="voteform.submit();" href="http://clearskyy.net/alpha/cast-vote.php?posturl='.$row[url].'&vote=d"><img src="http://clearskyy.net/crumpocolypse/upload/triDown.png" /></a></td>
+					<td>
+						<a href="#" class="upvote">
+							<img src="http://clearskyy.net/crumpocolypse/upload/triUp.png" />
+							<input type="hidden" value="'.$row['url'].'" class="URL" />
+							<input type="hidden" value="u" class="upOrDown" />
+						</a>
+					</td>
+					<td>
+						<a href="#" class="downvote">
+							<img src="http://clearskyy.net/crumpocolypse/upload/triDown.png" />
+							<input type="hidden" value="'.$row['url'].'" class="URL" />
+							<input type="hidden" value="u" class="upOrDown" />
+						</a>
+					</td>
 					<td>
 						<a href="'.$row['url'].'">'.$row['title'].'</a>
 					</td>
 					
 				</tr>
-
+				
+				
 				';
 					
 				$i++;
@@ -50,7 +63,24 @@ include_once '../crumpocolypse/dbCon.php'
 		</table>
 
 		
-				
+	<input type="hidden" name="vote" id="voteValue" />	
+	<input type="hidden" name="posturl" id="postURL" />	
 	</form>
+	
+	<script>
+	$(document).ready(function(){
+		$('.upvote').click(function() {
+			$('#postURL').val($(this).children('.URL').val());
+			$('#voteValue').val($(this).children('.upOrDown').val());
+			voteform.submit();
+		});
+					
+		$('.downvote').click(function() {
+			$('#postURL').val($(this).children('.URL').val());
+			$('#voteValue').val($(this).children('.upOrDown').val());
+			voteform.submit();
+		});
+	});
+	</script>
 
 </body></html>
