@@ -1,20 +1,9 @@
-/*
-         ,,                                                                   
-       `7MM                                   `7MM                            
-         MM                                     MM                            
- ,p6"bo  MM  .gP"Ya   ,6"Yb.  `7Mb,od8 ,pP"Ybd  MM  ,MP'`7M'   `MF'`7M'   `MF'
-6M'  OO  MM ,M'   Yb 8)   MM    MM' "' 8I   `"  MM ;Y     VA   ,V    VA   ,V  
-8M       MM 8M""""""  ,pm9MM    MM     `YMMMa.  MM;Mm      VA ,V      VA ,V   
-YM.    , MM YM.    , 8M   MM    MM     L.   I8  MM `Mb.     VVV        VVV    
- YMbmd'.JMML.`Mbmmd' `Moo9^Yo..JMML.   M9mmmP'.JMML. YA.    ,V         ,V     
-                                                           ,V         ,V      
-                                                        OOb"       OOb"  
-/*
 /* ------------------------------------------------------------------------ Overall Style */
 
 
-  @font-face{	font-family: Roboto; src: url(font/Roboto-Regular.ttf); }
+	@font-face{	font-family: Roboto; src: url(font/Roboto-Regular.ttf); }
 	@font-face{	font-family: irobo;	src: url(font/Roboto-MediumItalic.ttf); }
+	@font-face{ font-family: bebas; src: url(font/bebas-neue/BebasNeue-webfont.ttf); }
 	
 	::selection 	{ background-color: #0056ab;color: #fff; }
 	::-moz-selection {  background-color: #0056ab;color: #fff; }
@@ -27,15 +16,16 @@ YM.    , MM YM.    , 8M   MM    MM     L.   I8  MM `Mb.     VVV        VVV
 	blockquote { font-family: Georgia, Times, "Times New Roman", serif;font-style: italic;color: #383838;width: 50%;margin: 2% auto;}
 	blockquote cite{ color: #999;font-size: 87.5%;display: block;margin-top: 5px; }
 	blockquote cite:before  {content: '\2014 \2009';}
+	blockquote h2 { font-style:normal!important; }
 	body { margin: 0; }
 	html 
 		{font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;font-size: 91%;color: #222;background: url(img/tex2res5.png);min-height: 110%;}
-	h1{ letter-spacing: -1px; font-weight:200; text-shadow: 1px 1px 0 #ddd; }
-	h2{ letter-spacing: -1px; font-weight:200; text-shadow: 1px 1px 0 #ddd; }
+	h1{ font-weight:200; text-shadow: 1px 1px 0 #ddd; margin: 2% 0; font-size: 275%; }
+	h2{ font-weight:200; text-shadow: 1px 1px 0 #ddd; margin: 1.5% 0; font-size: 200%; }
 	h2 > a { text-decoration: none; color: #333;}
 	h2 > a:hover { color: #09c; text-decoration: Snone; }
-	h3{ letter-spacing: -1px;font-weight:200;text-shadow: 1px 1px 0 #ddd; }
-	h1, h2, h3 .edit { font-family: Cambria, Georgia, serif; }
+	h3{ font-weight:200;text-shadow: 1px 1px 0 #ddd; }
+	h1, h2, h3 .edit { font-family: bebas; }
 	h4 { letter-spacing: -1px; }
 	h5 { letter-spacing: -1px; }
 	h6  { letter-spacing: -1px; }
@@ -45,7 +35,7 @@ YM.    , MM YM.    , 8M   MM    MM     L.   I8  MM `Mb.     VVV        VVV
 	input[type=submit] 
 		{width: 25%;border: 1px solid #333;border-bottom: 2px solid #09c;background-color: #333;color: #ccc;font-size: 100%;font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;border-radius: 2px;-moz-border-radius: 2px;transition: background 0.25s, border 0.25s;-webkit-transition: background 0.25s, border 0.25s;}
 	input[type=submit]:hover	{ border: 1px solid #09c;background-color: #09c;border-bottom: 2px solid #09c; }
-	p { font-family: Geneva, Tahoma, Verdana, sans-serif; }
+	p { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; }
 	pre { margin-left: 2%;}
 	select { padding: .5%; }
 	table 
@@ -69,8 +59,8 @@ YM.    , MM YM.    , 8M   MM    MM     L.   I8  MM `Mb.     VVV        VVV
 	.content-cje2510 { clear:both; width: 100%; margin: 1.25% 0; padding: 1%; background-color: rgba(105,150,173,0.6); font: 100%/1.5 segoe ui; }
 	.content-clear { clear:both; width: 100%;margin: 1.25% 0;padding: 1%;background-color: rgba(105,150,173,0.6); font: 100%/1.5 segoe ui; }
 	.content-clearskyy { clear:both; width: 100%; margin: 1.25% 0; padding: 1%; background-color: #333; color: #ddd;font: 100%/1.5 segoe ui;}
-	.content-clearskyy  a { color: #fff;border-bottom: 1px dashed #09C; }
-	.content-clearskyy  a:hover{ color: #09c;border-bottom: none; }
+	.content-clearskyy  a { color: #fff!important;text-decoration:underline; }
+	.content-clearskyy  a:hover{ background-color:#09c;border-bottom: none; }
 	.content-clearskyy h1{ text-shadow: 1px 1px 0 #111; }
 	.content-clearskyy h2{ text-shadow: 1px 1px 0 #111; }
 	.content-clearskyy h3{ text-shadow: 1px 1px 0 #111; }
@@ -115,7 +105,7 @@ YM.    , MM YM.    , 8M   MM    MM     L.   I8  MM `Mb.     VVV        VVV
 	.thatdamnsubnav a { display:block; }
 	.thatdamnsubnav a:hover { text-decoration:none; color: #1ad; }
 	.type-ribbon h3 
-		{width: 100%;display: block;margin: 0;padding: 1.5% 1%;position: relative;left: -1%;color: #cfcfcf;text-shadow: 0 1px 1px #111;background: #333;font-family: "Lucida Bright", Georgia, serif;height: .75em;}
+		{width: 100%;display: block;margin: 0;padding: 1.5% 1%;position: relative;left: -1%;color: #cfcfcf;text-shadow: 0 1px 1px #111;background: #333;font-family: Consolas, monaco, monospace;height: .75em;}
 	.type-ribbon-small h3 
 		{display: block;height: 62.5%;margin: 0;padding: 1.25% 10.5%;position: relative;left: -5%;top: 50%;color: #cfcfcf;text-shadow: 0 1px 1px #111;background: #444;font-family: "Lucida Bright", Georgia, serif;}
 	.type-ribbon-small h3:before 
@@ -150,8 +140,8 @@ YM.    , MM YM.    , 8M   MM    MM     L.   I8  MM `Mb.     VVV        VVV
 	#highlight p { margin: 62.5% 0 62.5% 125%;width: 43.75em; }
 	#message { padding: 0.625em;font-family: Roboto;margin: 0.188em 0 0 0;height: 50px; }
 	#nav { width: 100%; margin: 0 auto; overflow:hidden;  }
-	#nav a { border-bottom: 2px SOLID #333;border-top: 1px SOLID #333; }
-	#nav a:hover { border-bottom: 2px SOLID #09C;border-top: 1px SOLID #333;text-decoration: none; }
+	#nav a { border-bottom: 2px SOLID #333;font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; }
+	#nav a:hover { border-bottom: 2px SOLID #09C;text-decoration: none; }
 	#nav ul { list-style: NONE; color: #EEE;width: 100%; position: fixed;top: 0%; background-color: #222; z-index: 55; margin: 0; padding-left: 4.5%; }
 	#nav ul li { float: LEFT; width: 7%; padding: 0;border: 1px SOLID #222; background-color: #222;text-align: CENTER; font-size: 95%;}
 	#nav ul li a { display: BLOCK;  color: #EEE;  padding: 5.5% 0%; }
@@ -168,13 +158,20 @@ YM.    , MM YM.    , 8M   MM    MM     L.   I8  MM `Mb.     VVV        VVV
 	#sidebar td a:hover { text-decoration: none;background: #fff; }
 	#sidebar a:active { background: #ccc; }
 	#sidebar::selection { background-color: none; color:#333; }
-	#sidebar table{ border-collapse: collapse;border: none;font-size: 90%;width:100%;background-color: #f9f9f9;font-family: font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;table-layout: fixed;word-break: break-all;text-align: center;}
+	#sidebar table{ border-collapse: collapse;border: none;font-size: 90%;width:100%;background-color: #f9f9f9;font-family: font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;table-layout: fixed;text-align: center;}
 	#sidebar td{ background: #f5f5f5;border-bottom: 1px solid #ccc; }
 	#sidebar th
 		{ background-color: #333;color: #eee;font-weight:normal;font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;font-style: italic;font-size: 142%;border-bottom: 1px solid #222;padding: 1%; }
 	#sidebar th a { padding: 0; color:#eee; }
-	#sidebar th a:hover { color: #a0d0ff; }
+	#sidebar th a:hover { color: #aaf; }
 	#sidebar th a:active {background:none;}
+	#sidebar #voting { width: 100%!important;table-layout:auto; }
+	#sidebar #voting td:last-child{ width: 7% }
+	#sidebar #voting td:nth-child(2){ width: 9% }
+	#sidebar #voting td:nth-child(2) a:hover { background-color: #afa; }
+	#sidebar #voting td:nth-child(3){ width: 9% }
+	#sidebar #voting td:nth-child(3) a:hover{ background-color: #faa; }
+	#sidebar #voting td:first-child a:hover { background-color: #aaf; }
 	#subject { width: 15.625em;padding: 0.313em; }
 	#third { width: 30%; margin: 1.25% 1%; padding: 0.5%; background-color: #f9f9f9; border: 1px solid #ccc; float: left; }
 	#thosedamnlinks { border: none; border-collapse: collapse; width: 90%; margin: 0 auto; }
@@ -183,7 +180,26 @@ YM.    , MM YM.    , 8M   MM    MM     L.   I8  MM `Mb.     VVV        VVV
 		{ font-family: "Andale Mono", AndaleMono, monospace; color: #fff; font-size: 155%; text-decoration: none; letter-spacing: -9.4%; font-weight: lighter; width: 100%; height: 100%;text-shadow: 0 1px 1px #ccc;border: none;display: block;}
 	#thosedamnprojectlinks { margin-left: 24em; width: 12em; }
 	#thosedamncontactlinks { margin-left: 48em; width: 12em; }
+	#voting a { display: block;text-decoration: none;color:#111;border:none;padding: 0.25em;font-size: 110%; }
+	#voting a img { padding: 5%; }
+	#voting td a:hover { text-decoration: none;background: #fff; }
+	#voting a:active { background: #ccc; }
+	#voting::selection { background-color: none; color:#333; }
+	#voting{ border-collapse: collapse;border: none!important;font-size: 90%;width:50%!important;background-color: #f9f9f9;text-align: center;}
+	#voting td{ background: #f5f5f5;border-bottom: 1px solid #ccc; }
+	#voting th
+		{ background-color: #333;color: #eee;font-weight:normal;font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;font-style: italic;font-size: 142%;border-bottom: 1px solid #222;padding: 1%; }
+	#voting th a { padding: 0; color:#eee; }
+	#voting th a:hover { color: #aaf; }
+	#voting th a:active {background:none;}
 	#wrap-left { padding: 0; margin: 0; float:left; width: 70.75%; }
+	#wrap-left #voting { width: 100%!important; }
+	#wrap-left #voting td { background-color: #fff; }
+	#wrap-left #voting td:nth-child(2) a:first-child:hover { background-color: #afa; }
+	#wrap-left #voting td:nth-child(2) a:last-child:hover { background-color: #faa; }
+	#wrap-left #voting td:nth-child(3) { vertical-align:middle; }
+	#wrap-left #voting a:hover { background-color: #aaf; }
+	
 
 	/* IE 6 */
 	* html #footer 
@@ -545,3 +561,16 @@ and (max-width: 1920px) {
 	#nav ul li ul li a:hover{ border-top: 1px SOLID #333;}
 
 }
+
+/*
+         ,,                                                                   
+       `7MM                                   `7MM                            
+         MM                                     MM                            
+ ,p6"bo  MM  .gP"Ya   ,6"Yb.  `7Mb,od8 ,pP"Ybd  MM  ,MP'`7M'   `MF'`7M'   `MF'
+6M'  OO  MM ,M'   Yb 8)   MM    MM' "' 8I   `"  MM ;Y     VA   ,V    VA   ,V  
+8M       MM 8M""""""  ,pm9MM    MM     `YMMMa.  MM;Mm      VA ,V      VA ,V   
+YM.    , MM YM.    , 8M   MM    MM     L.   I8  MM `Mb.     VVV        VVV    
+ YMbmd'.JMML.`Mbmmd' `Moo9^Yo..JMML.   M9mmmP'.JMML. YA.    ,V         ,V     
+                                                           ,V         ,V      
+                                                        OOb"       OOb"  
+*/
