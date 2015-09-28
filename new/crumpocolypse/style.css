@@ -1,0 +1,84 @@
+/* 
+	style.css
+	CSS Document for clearskyy.net
+	author: nate seymour
+	description: global styling document
+	last modified: january 3 2013
+*/
+
+/* global properties */
+
+@font-face{
+	font-family: Roboto;
+	src: url(font/Roboto-Regular.ttf);
+}
+
+html { 	
+	font-family: Roboto;
+	font-size: 90%;
+	color: #222;
+}
+
+h1, h2, h3 { letter-spacing: -2px; font-weight:200; }
+h4, h5, h6 { letter-spacing: -1px;}
+
+h1, h2, h3 .edit { font-family: Cambria, Georgia, serif; }
+
+a { text-decoration: none; border: none; color:#333; }
+a:hover { text-decoration: underline; color: #09C; }
+
+#search { width: 0px; border: 0; font-family: Roboto; padding: 3px; margin: 0;}
+#download { padding-top: 3px; }
+
+#nexus { width: 960px; margin: 0 auto; box-shadow: 1px 1px 5px #888; border: 1px solid #CCC; overflow:hidden; padding: 10px 20px 10px 20px; }
+	#content {
+		float: left;
+		width: 610px;
+		margin: 10px 0;
+	}
+	
+	#sidebar{
+		float: right;
+		width: 290px;
+		margin: 10px 0;
+	}
+
+
+pre { border: 1px dashed #7777cc; padding: 20px; }
+.warn { border: 2px solid #FCEC4B; background-color: #FBFB5A; text-align: center; color: #585817; padding: 10px; }
+
+/* caboose.php */
+
+#caboose{ width: 960px; margin: 10px auto; overflow:hidden; font-size: 85%; }
+
+/* codinghighlights.php */
+
+#highlight h4 { padding: 10px 20px; margin: 0; }
+
+#highlight h4:hover { color: #09c; cursor: help; }
+
+#highlight p { margin: 10px 0 10px 20px; width: 700px; }
+
+/* menu.php */
+
+#navi { height: 70px; }
+
+.thatdamnlink { font-size: 16px; }
+
+.expand, .hide { cursor: pointer; float: right; font-size: 85%; clear:both; }
+
+#thosedamnlinks { border: none; border-collapse: collapse; }
+#thosedamnlinks td { padding: 10px; }
+
+
+.thatdamnsubnav { box-shadow: 2px 2px 5px #999; margin: 0; margin-left: 110px; position: absolute; background-color: #eee; }
+.thatdamnsubnav tr:hover { background-color: #ddd;}
+
+#thosedamnprojectlinks { margin-left: 110px; }
+#thosedamncontactlinks { margin-left: 190px; }
+
+/* contact.php */
+
+.text { padding: 5px; font-family: Roboto; width: 236px; }
+#message { padding: 10px; font-family: Roboto; margin: 3px 0 0 0; height: 50px; }
+#subject { width: 250px; padding: 5px; }

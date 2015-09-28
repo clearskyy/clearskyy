@@ -1,0 +1,158 @@
+/* 
+	style.css
+	CSS Document for clearskyy.net
+	author: nate seymour
+	description: global styling document
+	last modified: january 28 2013
+*/
+
+/* global properties */
+
+@font-face{	font-family: Roboto; src: url(font/Roboto-Regular.ttf); }
+@font-face{	font-family: irobo;	src: url(font/Roboto-MediumItalic.ttf); }
+
+a { text-decoration: none; border: none; color:#09c; }
+a:hover { text-decoration: underline; color: #09C; }
+
+html { 	
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size: 0.91em;
+	color: #222;
+}
+
+h1, h2, h3 { letter-spacing: -2px; font-weight:200; }
+h4, h5, h6 { letter-spacing: -1px;}
+
+h1, h2, h3 .edit { font-family: Cambria, Georgia, serif; }
+
+#bar { 
+	width:38.125em; 
+	height:1.875em; 
+	background-color: #09c; 
+	color: #fff; 
+	font-family: "Lucida Bright", Georgia, serif;
+	font-size: 1.25em;
+	margin:0;
+	padding: 0.438em 0 0 1.25em ;
+	
+}
+	
+	
+#download { padding-top: 3px; }
+
+#nexus { width: 60em; margin: 0 auto; box-shadow: 1px 1px 5px #888; border: 1px solid #CCC; overflow:hidden; padding: 10px 20px 10px 20px; }
+	#logo { width: 9.375em; }
+
+	#content {
+		float: left;
+		width: 38.125em; /* 610px */
+		margin: 0.625em 0;
+	}
+	
+	.img-btm { width: 38.125em; }
+	
+	#ouch {
+		position: absolute;
+		top: 5.375em;
+		left: 30.625em; /* 490px */
+	}
+	
+	#sidebar{
+		float: right;
+		width: 18.125em;
+		margin: 0.625em 0;
+	}
+	
+	.yourMom { width: 18.125em; }
+
+	
+
+pre { 
+	border: 1px dashed #7777cc; 
+	
+	-moz-border-radius: 0.625em;
+	-webkit-border-radius: 0.625em;
+	border-radius: 0.625em; /* future proofing */
+	-khtml-border-radius: 0.625em; /* for old Konqueror browsers */	
+}
+
+#search { width: 0; border: 0; font-family: Roboto; padding: 0.188em; margin: 0;}
+
+table { border-collapse: collapse;}
+
+.table-divider { background-color: #333; color: #eee; font-family: Cambria, Georga, serif; text-align: center; padding: 0;}
+.warn { border: 0.125em solid #FCEC4B; background-color: #FBFB5A; text-align: center; color: #585817; padding: 0.625em; }
+
+
+/* articles.php */
+
+#articlesEverywhere { border-collapse: collapse; font-family: Cambria, Georgia, serif; margin-bottom: 5px; }
+#articlesEverywhere  a{ color: #444; }
+#articlesEverywhere  tr { height: 2.5em;}
+#articlesEverywhere td { background-color: #fff;  }
+
+/* caboose.php */
+
+#caboose{ width: 60em; margin: 0.625em auto; overflow:hidden; font-size: 0.85em; }
+
+#footer { position: fixed; left: 0; bottom: 0; height: 1.875em; width: 100%; background: #333; color:#eee; }
+	/* IE 6 */
+	
+	* html #footer { position: absolute; top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+	}
+
+/* clearskyy.php */
+
+.prof-table { font-size: 0.8em; font-family: font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;  }
+.prof-table th { background-color: #333; color: #eee; font-family: Cambria, Georga, serif; text-align: center; padding: 0.313em; font-weight:normal; } 
+
+#games { width: 38.125em; clear:both; }
+
+
+/* codinghighlights.php */
+
+#highlight h4 { padding: 0.625em 1.25em; margin: 0; }
+
+#highlight h4:hover { color: #09c; cursor: help; }
+
+#highlight p { margin: 0.625em 0 0.625em 1.25em; width: 43.75em; }
+
+/* contact.php */
+
+.text { padding: 0.313em; font-family: Roboto; width: 14.75em; }
+#message { padding: 0.625em; font-family: Roboto; margin: 0.188em 0 0 0; height: 50px; }
+#subject { width: 15.625em; padding: 0.313em; }
+
+/* editorials */
+
+#date { color: #999; font-family: irobo;  }
+
+
+/* menu.php */
+
+#navi { height: 4.375em; }
+
+.expand, .hide { cursor: pointer; float: right; font-size: 0.85em; clear:both; }
+
+#thosedamnlinks { border: none; border-collapse: collapse;  width: 60em;  }
+#thosedamnlinks a { font-family: Consolas, monaco, monospace; color: #fff; font-size: 1.25em; text-decoration: none; letter-spacing: 0.094em; font-weight: lighter; letter-spacing: -0.063em; }
+#thosedamnlinks td { padding: 0px; color: #fff; text-align: center; height: 1.875em; width: 20.938em; }
+#thosedamnlinks td:nth-child(odd) { background-color: #5b7a9e; }
+#thosedamnlinks td:nth-child(even) { background-color: #66a2d3; }
+#thosedamnlinks td:first-child { border-top-left-radius: 0.438em; -moz-border-radius-topleft: 0.438em; }
+#thosedamnlinks td:last-child { border-bottom-right-radius: 0.438em; -moz-border-radius-bottomright: 0.438em; }
+
+.thatdamnsubnav { box-shadow: 0.125em 0.125em 0.313em #999; margin: 0; margin-left: 6.875em; position: absolute; background-color: #444; color: #fff; }
+.thatdamnsubnav tr:hover { background-color: #555;}
+.thatdamnsubnav a { display:block; }
+.thatdamnsubnav a:hover { text-decoration:none; color: #1ad; }
+
+#thosedamnprojectlinks { margin-left: 24em; width: 12em; }
+#thosedamncontactlinks { margin-left: 48em; width: 12em; }
+
+/* PDF Bombs */
+
+	/* Add " (PDF)" text after links that go to PDFs */
+a[href$=".pdf"]:after { content: " (pdf)"; }
+	/* if file size specified as data attribute, use that too */
+a[href$=".pdf"][data-size]:after { content: " (pdf, " attr(data-size) ")"; }

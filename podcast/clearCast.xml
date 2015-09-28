@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcat-1.0.dtd" version="2.0">
+<channel>
+	
+	<title>clearCast</title>
+	
+	<link>http://www.clearskyy.net/podcasts/index.html</link>
+	
+	<language>en-us</language>
+	
+	<copyright>&#xA9; 2014 clearskyy.net</copyright>
+	
+	<itunes:subtitle>Gaming chitchat from your friends at clearskyy.net</itunes:subtitle>
+	
+	<itunes:author>Nate Seymour</itunes:author>
+	
+	<itunes:summary> </itunes:summary>
+	
+	<description> </description>
+	
+	<itunes:owner>
+	
+	<itunes:name>Nate Seymour</itunes:name>
+	
+	<itunes:email>seymounj@gmail.com</itunes:email>
+	
+	</itunes:owner>
+	
+	<itunes:image href="" />
+	
+	<itunes:category text="Gaming">
+	
+	<itunes:category text="Technology" />
+	
+	</itunes:category>
+	
+	<item>
+	
+	<title>Test</title>
+	
+	<itunes:author>Nate Seymour</itunes:author>
+	
+	<itunes:subtitle>A short clip of what is to come</itunes:subtitle>
+	
+	<itunes:summary>Enforcertmax appears on the clearCast to test out the logistics of this fine program.</itunes:summary>
+	
+	<itunes:image href="" />
+	
+	<enclosure url="" length="" type="audio/mpeg" />
+	
+		<pubDate>Tue, 30 Dec 2014 20:00:00 EST</pubDate>
+	
+	<itunes:duration>0:00</itunes:duration>
+	
+	</item>
+	
+</channel>
+	
+</rss>

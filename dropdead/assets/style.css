@@ -1,0 +1,315 @@
+/*
+	DROPD43D CLAN SITE CSS
+	Author: Nate Seymour
+	
+	SMACSS: box, border, background, text, other
+*/
+
+@font-face {
+	font-family: robotoBook;
+	src: url(../../crumpocolypse/font/BebasNeueBook.otf);
+}
+
+@font-face {
+	font-family: bebas;
+	src: url(../../crumpocolypse/font/bebas-neue/BebasNeue-webfont.ttf);
+}
+
+@font-face {
+	font-family: Munro;
+	src: url(../../crumpocolypse/font/MunroSmall.ttf);
+}
+
+/* BASE */
+
+html {
+	min-height: 100%;
+	background-color: #1a1a1a;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	font-family: robotoBook;
+}
+
+h2 {
+	color: #FFF;
+	font-family: robotoBook;
+}
+
+ul {
+	list-style-type: square;
+}
+
+/* LAYOUT */
+
+#nexus {
+	margin: 2.5% 0 0 0;
+	overflow: hidden;
+	width: 100%;
+	color: #ccc;
+}
+
+#footer {
+	bottom: 0;
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+	background: #111;
+}
+
+/* MODULE */
+
+.nexusLeft {
+	float: left;
+	width: 20%;
+}
+
+.nexusLeft ul {
+	padding: 0;
+	list-style: none;
+}
+
+.nexusLeft ul li {
+	padding: 0;
+	width: 80%;
+	font-size: 95%;
+	border-bottom: 1px solid #777;
+}
+
+.nexusLeft ul li a {
+	display: block;
+	padding: 2%;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.nexusLeft ul li a:hover {
+	color: #FFF;
+}
+
+.nexusCenter {
+	float: left;
+	padding: 1%;
+	width: 75%;
+}
+
+.postContainer {
+	border-bottom: 1px solid #555;
+	margin: 0 0 1% 0;
+}
+
+.postContainer a {
+	color: #85509E;
+	text-decoration: none;
+}
+
+.postContainer a:hover {
+	text-decoration: underline;
+}
+
+.postInfo {
+	font-size: 75%;
+}
+
+.postContent {
+	margin: 1% 0;
+	font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+.nexusRight {
+	float: right;
+	width: 20%;
+}
+
+.nexusRight ul {
+	float: right;
+	width: 80%;
+	list-style: none;
+}
+
+.nexusRight ul li {
+	padding: 0;
+	width: 100%;
+	font-size: 95%;
+	text-align: right;
+}
+
+.nexusRight ul li a {
+	display: block;
+	padding: 2% 7%;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.nexusRight ul li a:hover {
+	background-color: #3D317E;
+	color: #FFF;
+}
+
+.nexusRight > .DP150 {
+	text-align: right;
+	padding: 0 5%;
+}
+
+.nexusRight > .loginInfo table {
+	border-collapse: collapse;
+}
+
+.nexusRight > .loginInfo table tr {
+	text-align: left;
+}
+
+.nexusRight > .loginInfo td {
+	border: 1px solid #FFF;
+	padding: 2px 4px;
+}
+
+.statusBox {
+	box-shadow: 0 0 5px #000;
+	margin: 1% auto 0 auto;
+	width: 50%;
+}
+
+.statusHeader {
+	padding: 0.5%;
+	background: #111;
+	font-size: 80%;
+	overflow: hidden;
+}
+
+.statusHeader a {
+	color: #fff;
+}
+
+.statusHeaderLeft {
+	float: left;
+}
+
+.statusHeaderRight {
+	float: right;
+	text-align: right;
+}
+
+.statusContent {
+	padding: 0.5% 2%;
+	background: #2B1B3F;
+	font-size: 90%;
+}
+
+.loginInfo {
+	clear: both;
+	padding: 1% 5%;
+	font-size: 70%;
+	text-align: right;
+}
+
+.footerBottom {
+	clear: both;
+	margin: 0 auto;
+	padding: 1%;
+	background: #000;
+	color: #ccc;
+	font-size: 80%;
+	text-align: center;
+}
+
+#footer > div {
+	float: left;
+	width: 100%;
+	padding: 1%;
+	text-align: center;
+}
+
+#footer div a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#footer div table {
+	text-align: center;
+}
+
+#footer a {
+	font-weight: 500;
+}
+
+#pageTitle {
+	color: #FFF;
+	font-family: robotoBook;
+	text-align: center;
+	text-shadow: 0 1px 1px #555;
+}
+
+/* STATE */
+
+/* THEME */
+
+.adminSidebarTABLE {
+	width: 100%;
+}
+
+.adminSidebarTABLE td {
+	text-align: center;
+}
+
+.adminSidebarTABLE td a {
+	display: block;
+	background-color: #222;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.adminSidebarTABLE td a:hover {
+	background-color: #5D82CF;
+}
+
+.adminSidebarTABLE th {
+	border-bottom: 1px solid #333;
+	background: #111;
+}
+
+.munro { font-family: Munro; }
+
+#navi {
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+#navi ul {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-bottom: 1px solid #333;
+	background-color: #111;
+	color: #EEE;
+	list-style: none;
+	z-index: 55;
+}
+
+#navi ul li {
+	float: left;
+	padding: 0;
+	width: 9.09%;
+	font-size: 95%;
+	text-align: center;
+}
+
+#navi ul li a {
+	display: block;
+	padding: 5.5% 0;
+	color: #EEE;
+	text-decoration: none;
+}
+
+#navi ul li a:hover {
+	background-color: #5D82CF;
+	text-decoration: none;
+}

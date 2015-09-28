@@ -1,0 +1,10 @@
+/*
+	clearskyy.net css
+	author: nathan seymour
+	description: Global CSS stylesheet for php script pages
+*/
+
+body { margin: 0; }
+
+#container { width: 540px; margin: 0 auto;}
+.clear{ clear:both; }

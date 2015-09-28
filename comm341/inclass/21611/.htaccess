@@ -1,0 +1,5 @@
+AuthName "Restricted Area" 
+AuthType Basic 
+AuthUserFile /afs/ad.clarkson.edu/users/s/e/seymounj/public_html/comm341/inClass/21611/.htpasswd 
+AuthGroupFile /dev/null 
+require valid-user

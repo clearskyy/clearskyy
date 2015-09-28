@@ -1,0 +1,58 @@
+<!doctype html><html><head>
+
+<style type="text/css">
+#notes h5{margin:0; padding:5px 0 5px 10px; background-color:#facd8a; border-bottom:1px solid #fff; color: #00314F;font-weight:normal;}
+#notes div{ background-color: #fdebcf; border-bottom: 2px solid #fff;position: relative; padding-left: 20px;}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+
+<script type="text/javascript">
+$(function(){
+  $('#notes > div').hide();
+  $('#notes h5').click(function(){
+   $(this).next().animate(
+     {'height':'toggle'},2000,'easeOutElastic'
+   );
+  });
+});
+</script>
+</head><body >
+
+<div id="notes">
+<h4>Notes </h4>
+  <h5> jQuery .animate easing</h5> 
+  <div> Try easing with these 
+<xmp>   linear           swing           
+   easeOutExpo      easeOutElastic
+   easeOutBack      easeOutBounce
+   easeInOutExpo    easeInOutQuint 
+   easeInOutCirc    easeInOutElastic
+   easeInOutQuad    easeInOutCubic
+   easeInOutQuart     
+   
+Note: try easeIn..., easeOut..., and easeInOut... 
+</xmp>
+  </div>
+
+ <h5>Easing Plugins </h5> 
+  <div>
+<p>Here we use the downloadable easing file:<br>
+    <a href="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"> jquery.easing.1.3.js </a>
+</p>
+
+
+<p>The easing plugins can also be found here: <br>
+<a href="http://code.google.com/p/jquery-swip/source/browse/trunk/jquery.easing.1.3.js">
+jquery.easing.1.3.js</a> </p>
+
+<p>Some other jQuery plugins are at <br> 
+<a href= "http://code.google.com/p/jquery-swip/source/browse/trunk/">jquery-swip</a>
+</p>
+
+<p>Try copying the file to your tinman account as jsquery.easing.1.2.js and then using a relative link to access it. </p>
+
+ </div>
+</div>
+</body>
+</html>

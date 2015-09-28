@@ -1,0 +1,301 @@
+/*
+	CSS Document for clearskyy.net/home
+	author: nate seymour
+	description: layout for the home page
+	last modified: october 25, 2011
+*/
+
+/* --- HTML ELEMENTS --- */
+
+html { height: 100%; }
+
+body { 
+	font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; 
+	margin: 0;
+}
+a { 
+	color:#700070; 
+	text-decoration:none; 
+}
+a:hover { text-decoration:underline; }
+
+h2 { margin: 0px; }
+h3 { margin: 0px; }
+h5 { 
+	font-size: 120px; 
+	margin: 0px;
+	clear:both;
+}
+
+p { 
+	margin:5px 0;
+	font-size: 80%;
+}
+
+/* --- DIVIDERS --- */
+.push {
+	margin-top:20px;
+}
+
+.divider{
+	clear:both;
+	width:1000px;
+	height:500px;
+}
+
+.dividerbottom{
+	clear:both;
+	width:1000px;
+	height:225px;
+}
+
+/* --- CONTAINERS --- */
+#contain {
+	width: 1000px;
+	min-height: 100%;
+	margin-left:10px;
+}
+
+#lcon {
+	margin: 0;
+	padding: 0;
+	width: 410px;
+	float: left;
+	padding-bottom: 40px;
+}
+
+#midcon {
+	margin:0;
+	padding:0;
+	width:290px;
+	float:left;
+	padding-bottom: 40px;
+
+}
+
+#rcon {
+	margin: 0;
+	width: 300px;
+	float:right;
+	padding: 0;
+	padding-bottom: 40px;
+}
+
+#lpcon {
+	width:700px;
+	margin:0;
+	padding:0;
+	float:left;
+}
+
+
+#procon{
+	width:1000px;
+	margin: 0 auto;
+	padding:0;
+
+}
+
+
+/* --- TEXTUAL INFORMATION FORMAT --- */
+
+/* slogan */
+
+h1 { 
+	letter-spacing: -2px; 
+	float:right; 
+	margin: 20px 0 0 0;
+}
+
+#slo {
+	width: 285px;
+	font-size: 75%;
+	background-color: #000;
+	color: #FFF;
+	padding-left: 5px;
+	float: right;
+	clear: both;
+	margin-top:-85px;
+}
+
+
+/* small comments */
+.smll { 
+	font-size: 70%; 
+}
+
+/* quick bio */
+.qb {
+	color: #adb7c0;
+	font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	text-align: center;
+	font-size:85%;	
+}
+
+/* quick description*/
+#qd{
+	color:#adb7c0;
+	color: #adb7c0;
+	font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	text-align: center;
+	font-size:85%;
+	padding:0;
+	margin:0 auto;
+	width:300px;
+	float:left;
+}
+
+/* first paragraph */
+
+.prgrph {
+	padding-top:20px;yep
+	margin:5px 0;
+	font-size: 80%;
+}
+
+
+/*--- BUTTONS ---*/
+.blkbttn{
+	background-color:#000;
+	color:#FFF;
+	font-size:80%;
+}
+
+/* --- TEXTAREAS --- */
+.txtrs{
+	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif ;
+}
+
+/* --- FOOTER AREA --- */
+.fbar {  
+	width: 100%;
+	font-size: 70%; 
+	background: url(img/bg.gif) top left repeat; 
+	clear:both; 
+	padding-top: 40px; 
+	color:#EEE;
+	overflow:hidden;
+}
+	/* footer container */
+.fcon { 
+	width: 1000px; 
+	margin: auto; 
+	padding: 40px; 
+}
+	/* partitions within footer container */
+.fpartition {
+	width: 333px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+.fpartition ul { list-style:none;}
+.fpartition a {color:#eee;}
+.fpartition  h2 {padding-left:40px;}
+
+/* --- NAVIGATION --- */
+
+ #nav { 
+	color:#FFF;
+	float:right;
+	top:10px;
+	position:relative;
+}
+
+ #nav ul { list-style: none; padding:0;  }
+
+ #nav ul li { 
+	text-align: center; 
+	background-color:#000;
+
+}
+
+ #nav ul li a { 
+	display: block; 
+	text-decoration: none; 
+	color:#FFF; 
+	width: 80px; 
+	padding: 3px 0; 
+}
+
+ #nav ul li a:hover {  
+	color: #adb7c0;
+	-webkit-transition: color .25s linear, background-color .15s linear .1s; -moz-transition: background-color .15s linear .1s;
+}
+ 
+/* drop down */
+
+ #nav li ul  { 
+	display:none; 
+	position:absolute; 
+	clear:both; 
+}
+
+ #nav li.mid {
+	clear:both;
+	margin: -28px 0 0 -80px;
+	color:#000;
+	
+}
+
+ #nav li.mid a {
+	color:#000;
+ }
+ 
+ #nav li:hover > ul{ 
+	display:block; 
+	clear:both;
+}
+
+/* SLIDESHOW */
+div#slideshow {
+	width: 1000px; height: 700px; padding: 15px 0 0 0;
+	overflow: scroll; /* Allows the slides to be viewed using scrollbar if Javascript isn't available */ 
+	position: relative; z-index: 5;
+}
+	div#slideshow ul#nav {
+		display: none;
+		list-style: none;
+		position: relative; top: 250px; z-index: 3;margin:0;padding:0;
+	}
+		div#slideshow ul#nav li#prev {
+			float: left; margin: 0; padding:0;
+		}
+		div#slideshow ul#nav li#next {
+			float: right; margin: 0 0 0 700px;
+		}
+		div#slideshow ul#nav li a {
+			display: block; width: 50px; height:50px; text-indent: -9999px;
+		}
+			div#slideshow ul#nav li#prev a {
+				background: url(img/prev2.gif);
+			}
+			div#slideshow ul#nav li#next a {
+				background: url(img/next2.gif);
+			}
+
+	div#slideshow ul#slides {
+		list-style: none;
+		margin-left:240px;
+	}
+		div#slideshow ul#slides li {
+			margin: 0 0 20px 51px;
+		}
+
+
+/* BULLSHIT */
+
+#meh{
+	margin: 0 auto;
+	width:500px;
+	height:500px;
+	background: #f7f031; /* Old browsers */
+background: -moz-linear-gradient(top, #f7f031 0%, #c9b926 59%, #e09823 73%, #844027 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f031), color-stop(59%,#c9b926), color-stop(73%,#e09823), color-stop(100%,#844027)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f7f031 0%,#c9b926 59%,#e09823 73%,#844027 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f7f031 0%,#c9b926 59%,#e09823 73%,#844027 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #f7f031 0%,#c9b926 59%,#e09823 73%,#844027 100%); /* IE10+ */
+background: linear-gradient(top, #f7f031 0%,#c9b926 59%,#e09823 73%,#844027 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f031', endColorstr='#844027',GradientType=0 ); /* IE6-9 */
+}
