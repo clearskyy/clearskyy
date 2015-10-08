@@ -55,7 +55,7 @@ if( isset( $_SESSION["user"] )){
 				<div class="content">
 					<div class="type-ribbon">
 						<h3>
-							GITHUB TEST - Pick a game, nigga.
+							GITHUB TEST - HOPES AND DREAMS BEING SHATTERED - Pick a game, nigga.
 						</h3>
 					</div>
 
