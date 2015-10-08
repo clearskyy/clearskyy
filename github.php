@@ -1,0 +1,3 @@
+<?PHP
+    `git pull`;
+?>
