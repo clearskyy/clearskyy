@@ -1,3 +1,3 @@
 <?PHP
-    `git pull`;
+    `git pull clearskyy master`;
 ?>
