@@ -96,11 +96,10 @@ include_once '../crumpocolypse/dbCon.php';
 					
 					}
 					
-					 echo '	<td><a href="'.$key['url'].'" ><h2>'.$key['title'].'</h2></a></td>
-							<td>'.date("F j, Y", strtotime($key['date'])).'</td>
-						</tr>
-					
-				</tr>';
+					// echo '	<td><a href="'.$key['url'].'" ><h2>'.$key['title'].'</h2></a></td><td>'.date("F j, Y", strtotime($key['date'])).'</td></tr></tr>';
+                                                    
+                    echo ' <td><a href="#" value="'.$key['id'].'" class="reviewLink" ><h2> ' . $key['title'] . ' </h2></a></td>
+                            <td>' . date("F j, Y", strtotime($key['date'])) . '</td></tr></tr>';
 					
 		}
 	}
@@ -127,4 +126,20 @@ include_once '../crumpocolypse/dbCon.php';
 <!-- End of Nexus -->
 
 <?	include "../crumpocolypse/caboose.php"; ?>
-<body></html>
+
+<script language="javascript">
+    
+    $('.reviewLink').on("click", function(){
+        
+        var rID = $(this).attr("value");
+        
+        $.post("360noscope.php", { id: rID }, function(result){
+           $("#wrap-left").html(result)     
+        });
+    
+    });
+    
+</script>
+        
+<body>
+</html>

@@ -1,0 +1,543 @@
+/* Smartphones (portrait and landscape) ----------- *
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+
+
+
+}
+
+/* Smartphones (landscape) ----------- *
+@media only screen 
+and (min-width : 321px) {
+/* Styles *
+
+@font-face{	font-family: Roboto; src: url(font/Roboto-Regular.ttf); }
+	@font-face{	font-family: irobo;	src: url(font/Roboto-MediumItalic.ttf); }
+
+	html { 	
+		font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+		font-size: 0.91em;
+		color: #222;
+		background: url(img/kindajean.png);
+	}
+	
+	a { text-decoration: none; border: none; color:#09c; }
+	a:hover { border-bottom: 1px solid #222; color: #09C; }
+
+	h1, h2, h3 { letter-spacing: -2px; font-weight:200; }
+	h4, h5, h6 { letter-spacing: -1px;}
+
+	h1, h2, h3 .edit { font-family: Cambria, Georgia, serif; }
+
+	table { border-collapse: collapse;}
+	
+	pre { 
+		border: 1px dashed #7777cc; 
+		
+		-moz-border-radius: 0.625em;
+		-webkit-border-radius: 0.625em;
+		border-radius: 0.625em; /* future proofing *
+		-khtml-border-radius: 0.625em; /* for old Konqueror browsers *	
+	}
+	
+	#bar { 
+		width:38.125em; 
+		height:1.875em; 
+		background-color: #09c; 
+		color: #fff; 
+		font-family: "Lucida Bright", Georgia, serif;
+		font-size: 1.25em;
+		margin:0;
+		padding: 0.438em 0 0 1.25em ;
+		
+	}
+		
+
+	#nav { width: 95%; margin: 0 auto; box-shadow: 1px 1px 5px #888; border: 1px solid #CCC; overflow:hidden; padding: .5% 1.5%; background-color: #fff; }
+	
+	
+	#nexus { width: 95%; margin: 0 auto; box-shadow: 1px 1px 5px #888; border: 1px solid #CCC; overflow:hidden; padding: 1% 1.1%; background-color: #fff; }
+		#logo { width: 9.375em; }
+
+		#content { width: 95%; /* 610px * margin: 1% 0; background-color: #fff; }
+		#sidebar{ clear:both; width: 95%; margin: 1% 0; background-color: #fff;	}
+		
+		#ouch { position: absolute; top: 5.375em; left: 30.625em; /* 490px * }
+		#download { padding-top: 3px; }
+		.img-btm { width: 95%; }
+		.yourMom { width: 26%; }
+	
+	#nav.sticky {
+		position: fixed;
+		top: 0;
+		left: 25%;
+		
+	}
+
+
+	#search { width: 0; border: 0; font-family: Roboto; padding: 0.188em; margin: 0;}
+
+	
+
+	.table-divider { background-color: #333; color: #eee; font-family: Cambria, Georga, serif; text-align: center; padding: 0;}
+	.warn { border: 0.125em solid #FCEC4B; background-color: #FBFB5A; text-align: center; color: #585817; padding: .75%; }
+
+
+	/* articles.php *
+
+	#articlesEverywhere { border-collapse: collapse; font-family: Cambria, Georgia, serif; margin-bottom: 5px; width: 100%; }
+	#articlesEverywhere  a{ color: #444; }
+	#articlesEverywhere  tr { height: 2.5em;}
+	#articlesEverywhere td { background-color: #fff; }
+
+	/* caboose.php *
+
+	#caboose{ width: 60em; margin: 0.625em auto; overflow:hidden; font-size: 0.85em; }
+
+	#footer { position: fixed; left: 0; bottom: 0; height: 1.875em; width: 100%; background: #333; color:#eee; }
+		/* IE 6 *
+		
+		* html #footer { position: absolute; top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+
+	/* clearskyy.php *
+
+	.prof-table { font-size: 0.8em; font-family: font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;  }
+	.prof-table th { background-color: #333; color: #eee; font-family: Cambria, Georga, serif; text-align: center; padding: 0.313em; font-weight:normal; } 
+
+	#games { width: 38.125em; clear:both; }
+
+
+	/* codinghighlights.php *
+
+	#highlight h4 { padding: 0.625em 1.25em; margin: 0; }
+
+	#highlight h4:hover { color: #09c; cursor: help; }
+
+	#highlight p { margin: 0.625em 0 0.625em 1.25em; width: 43.75em; }
+
+	/* contact.php *
+
+	.text { padding: 0.313em; font-family: Roboto; width: 14.75em; }
+	#message { padding: 0.625em; font-family: Roboto; margin: 0.188em 0 0 0; height: 50px; }
+	#subject { width: 15.625em; padding: 0.313em; }
+
+	/* editorials *
+
+	#date { color: #999; font-family: irobo;  }
+
+
+	/* menu.php *
+
+	#navi { height: 4.375em; }
+
+	.expand, .hide { cursor: pointer; float: right; font-size: 0.85em; clear:both; }
+
+	#thosedamnlinks { border: none; border-collapse: collapse;  width: 90%;  }
+	#thosedamnlinks a { font-family: Consolas, monaco, monospace; color: #fff; font-size: 125%; text-decoration: none; letter-spacing: 0.094em; font-weight: lighter; letter-spacing: -0.063em; }
+	#thosedamnlinks td { padding: 0px; color: #fff; text-align: center; height: 1.875em; width: 20.938em; }
+	#thosedamnlinks td:nth-child(odd) { background-color: #5b7a9e; }
+	#thosedamnlinks td:nth-child(even) { background-color: #66a2d3; }
+
+	.thatdamnsubnav { box-shadow: 0.125em 0.125em 0.313em #999; margin: 0; margin-left: 6.875em; position: absolute; background-color: #444; color: #fff; }
+	.thatdamnsubnav tr:hover { background-color: #555;}
+	.thatdamnsubnav a { display:block; }
+	.thatdamnsubnav a:hover { text-decoration:none; color: #1ad; }
+
+	#thosedamnprojectlinks { margin-left: 24em; width: 12em; }
+	#thosedamncontactlinks { margin-left: 48em; width: 12em; }
+
+	/* PDF Bombs *
+
+		/* Add " (PDF)" text after links that go to PDFs *
+		
+		a[href$=".pdf"]:after { content: " (pdf)"; }
+		
+		/* if file size specified as data attribute, use that too *
+		
+		a[href$=".pdf"][data-size]:after { content: " (pdf, " attr(data-size) ")"; }
+		
+		.ribbon {
+ font-size: 121% !important;
+ font-family: "Arial Narrow", Arial, sans-serif;
+ letter-spacing: 1px;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements *
+
+ width: 50%;
+    
+ position: relative;
+ background: #09c;
+ color: #fff;
+ text-align: center;
+ padding: 1em 2em; /* Adjust to suit *
+ margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. *
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #07a;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #058 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+.non-semantic-protector { position: relative; z-index: 1; }
+
+
+}
+
+/* Smartphones (portrait) ----------- *
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------------------------  Desktops and laptops ----------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- *
+@media only screen 
+and (min-width : 1224px) {
+/* -------------------------------------------------- Styles */
+
+	@font-face{	font-family: Roboto; src: url(font/Roboto-Regular.ttf); }
+	@font-face{	font-family: irobo;	src: url(font/Roboto-MediumItalic.ttf); }
+
+	html { 	
+		font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+		font-size: 91%;
+		color: #222;
+		background: url(img/tex2res5.png);
+		min-height: 105%;
+	}
+	
+	a { text-decoration: none; border-bottom: 1px dashed #09c; color:#09c; }
+	a:hover { border-bottom: 1px solid #09c; }
+	
+	blockquote {
+		font-family: Georgia, Times, "Times New Roman", serif;
+		font-style: italic;
+		color: #383838;
+		width: 50%;
+		margin: 2% auto;
+	}
+	
+	blockquote cite {
+		color: #999;
+		font-size: 87.5%;
+		display: block;
+		margin-top: 5px;
+	}
+	
+	blockquote cite:before {
+		content: '\2014 \2009';
+	}
+
+	h1, h2, h3 { letter-spacing: -2px; font-weight:200; }
+	h4, h5, h6 { letter-spacing: -1px;}
+
+	h1, h2, h3 .edit { font-family: Cambria, Georgia, serif; }
+
+	table { border-collapse: collapse;}
+	
+	pre { 
+		border: 1px dashed #7777cc; 
+		
+		-moz-border-radius: 0.313em;
+		-webkit-border-radius: 0.313em;
+		border-radius: 0.313em; /* future proofing */
+		-khtml-border-radius: 0.313em; /* for old Konqueror browsers */	
+		
+		/* GIANT OVAL *
+		-moz-border-radius: 62.5%;
+		-webkit-border-radius: 62.5%;
+		border-radius: 62.5%; /* future proofing *
+		-khtml-border-radius: 62.5%; /* for old Konqueror browsers */	
+	}
+
+	
+	.type-ribbon { 
+		width: 45%;
+		position: relative;
+	}
+	
+	.type-ribbon h3 {
+		display: block;
+		height: 62.5%;
+		line-height: 1.3;
+		margin: 0;
+		padding: 1.25% 10.5%;
+		position: relative;
+		left: -5%;
+		top: 50%;
+		color: #cfcfcf;
+		text-shadow: 0 1px 1px #111;
+		border-top: 1px solid #363636;
+		border-bottom: 1px solid #202020;
+		background: #333;
+		box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+		font-family: "Lucida Bright", Georgia, serif;
+	}
+	
+	.type-ribbon h3:before {
+		content: '';
+		display: block;
+		width: 0;
+		height: 0;
+		position: absolute;
+		bottom: -11px;
+		z-index: 2;
+		border-style: solid;
+		border-width: 10px 0 0 10px;
+		border-color: #242424 transparent transparent transparent;
+	}
+	
+	.type-ribbon h3::before { left: 0;}
+
+	#cloud { width: 90%; margin: 0 auto; overflow: visible; padding: 1%; background-color: #f9f9f9; }
+	
+	#nexus { width: 90%; margin: 0 auto; padding: 0;  }
+	
+	#wrap-left { padding: 0; margin: 0; float:left; width: 70.75%; }
+
+		.content { 
+			clear:both;
+			width: 100%; 
+			margin: 1.25% 0; 
+			padding: 1%;
+			background-color: #f9f9f9;
+			
+		}
+		#sidebar{ 
+			float: right; 
+			width: 25%; 
+			margin: 1% 0; 
+			clear: none;
+			background-color: #f9f9f9;
+			padding: 1%;
+		}
+		
+		
+		#ouch { position: absolute; top: 5.375em; left: 30.625em; /* 490px */ }
+		
+		#download { padding-top: 3px; }
+		
+		.img-btm { width: 75%; }
+		
+
+	#search { width: 0; border: 0; font-family: Roboto; padding: 0.188em; margin: 0;}
+
+	.table-divider { background-color: #333; color: #eee; font-family: Cambria, Georga, serif; text-align: center; padding: 0;}
+	
+	.warn { border: 0.125em solid #FCEC4B; background-color: #FBFB5A; text-align: center; color: #585817; padding: 1%; margin: 1% auto; }
+
+
+	/* -------------------------------------------------- articles.php */
+
+	#articlesEverywhere { border-collapse: collapse; font-family: Cambria, Georgia, serif; margin-bottom: 5px; }
+	#articlesEverywhere  a{ color: #444; }
+	#articlesEverywhere  tr { height: 250%;} /* 40px | 2.5em */
+	#articlesEverywhere td { background-color: #fff; }
+	
+	.yourMom { width: 100%; } /* jessika's ad */
+
+	/* -------------------------------------------------- caboose.php */
+
+	#caboose{ width: 90%; margin: 0.625em auto; overflow:hidden; font-size: 0.85em; }
+
+	#footer { position: fixed; left: 0; bottom: 0; height: 1.875em; width: 100%; background: #333; color:#eee; }
+		/* IE 6 */
+		
+		* html #footer { 
+			position: absolute; 
+			top: expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+
+	/* -------------------------------------------------- clearskyy.php / profiles */
+	
+	#avatar { text-align:center; }
+	
+	#games { width: 100%; clear:both; }
+
+	.prof-table { font-size: 80%; font-family: font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; width:100%;  }
+	.prof-table th { background-color: #333; color: #eee; font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; text-align: center; font-weight:normal; } 
+	.prof-table tr:nth-child(2) th{ font-family: Cambria, Georga, serif; font-size: 116%; }
+	
+	.th-main  { font-style: italic; font-size: 142%; }
+	
+
+
+	/* -------------------------------------------------- codinghighlights.php */
+
+	#highlight h4 { padding: 62.5% 125%; margin: 0; }
+
+	#highlight h4:hover { color: #09c; cursor: help; }
+
+	#highlight p { margin: 62.5% 0 62.5% 125%; width: 43.75em; }
+
+	/* -------------------------------------------------- contact.php */
+
+	.text { padding: 31.3%; font-family: Roboto; width: 14.75em; }
+	#message { padding: 0.625em; font-family: Roboto; margin: 0.188em 0 0 0; height: 50px; }
+	#subject { width: 15.625em; padding: 0.313em; }
+
+	/* -------------------------------------------------- editorials */
+
+	#date { color: #999; font-family: irobo;  }
+
+
+	/* --------------------------------------------------  menu.php -------- */
+	
+	#clrskyy { width: 100%; margin: 0 auto; overflow:hidden; position: relative; top: 0; }
+		#clrskyy a { margin: 0 auto; border: none; }
+	#clearskyyCloud { width: 6.75%; position: relative; left: 45%; }
+		
+	#nav { width: 100%; margin: 0 auto; overflow:hidden;  }
+
+	
+		#nav.sticky {
+		position: fixed;
+		top: 0;
+		left: 0;
+		margin: 0;
+		width: 100%;
+		z-index: 5;
+		background-color: #333;
+		}
+
+
+	.expand, .hide { cursor: pointer; float: right; font-size: 0.85em; clear:both; }
+
+	#thosedamnlinks { border: none; border-collapse: collapse; width: 90%; margin: 0 auto; }
+	#thosedamnlinks td { padding: 0; color: #fff; text-align: center; height: 1.875em; width: 15%; border: 1px solid #444; background-color: #333; } /*bg-color #5b7a9e*/
+	
+	#thosedamnlinks a { 
+		font-family: Consolas, monaco, monospace; 
+		color: #fff; 
+		font-size: 125%; 
+		text-decoration: none; 
+		letter-spacing: -9.4%; 
+		font-weight: lighter; 
+		width: 100%; 
+		text-shadow: 0 1px 1px #ccc;
+		border: none;
+	}
+
+	.thatdamnsubnav { box-shadow: 0.125em 0.125em 0.313em #999; margin: 0; margin-left: 6.875em; position: absolute; background-color: #444; color: #fff; }
+	.thatdamnsubnav tr:hover { background-color: #555;}
+	.thatdamnsubnav a { display:block; }
+	.thatdamnsubnav a:hover { text-decoration:none; color: #1ad; }
+
+	#thosedamnprojectlinks { margin-left: 24em; width: 12em; }
+	#thosedamncontactlinks { margin-left: 48em; width: 12em; }
+
+	/* -------------------------------------------------- PDF Bombs */
+
+		/* Add " (PDF)" text after links that go to PDFs */
+		
+		a[href$=".pdf"]:after { content: " (pdf)"; }
+		
+		/* if file size specified as data attribute, use that too */
+		
+		a[href$=".pdf"][data-size]:after { content: " (pdf, " attr(data-size) ")"; }
+		
+	/* Ribbon from CSS-Tricks - modified */
+
+
+	/* -------------------------------------------------- Ribbon from CSS-Tricks modified */
+
+.ribbon {
+ font-size: 121% !important;
+ font-family: "Arial Narrow", Arial, sans-serif;
+ letter-spacing: 1px;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+ width: 50%;
+    
+ position: relative;
+ background: #09c;
+ color: #fff;
+ text-align: center;
+ padding: 1em 2em; /* Adjust to suit */
+ margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #07a;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #058 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+.non-semantic-protector { position: relative; z-index: 1; }
+
+}
+
+
+/* Large screens ----------- *
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- *
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles *
+} */
+

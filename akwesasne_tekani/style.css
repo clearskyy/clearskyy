@@ -1,0 +1,229 @@
+/*
+ * 	NATE SEYMOUR
+ *  STYLE.CSS
+ *  STYLE SHEET FOR AKWESASNE.CA
+ * 
+ */
+
+ body {
+ 	
+ 	margin: 0;
+ 	font-family: Arial, Helvetica, sans-serif;
+ 	background: #D1CBD6;
+ 	
+ }
+
+ #topBar {
+ 
+ 	height: 50px;
+ 	background-color: #693E94;
+ 
+ }
+ 
+	#mainNavigation {
+		
+		margin: 0 auto;
+		width: 1000px;
+				
+	}
+		
+		#mainNavigation ul {
+			
+			float: left;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		
+		#mainNavigation ul li a {
+			
+			text-decoration: none;
+			color: #FFF;
+			
+		}
+		
+			#mainNavigation ul li a:hover {
+				
+				text-decoration: underline;
+				
+			}
+			
+ #secondBar {
+ 	
+ 	height: 30px;
+ 	
+ }
+ 
+ 	#secondaryNavigation {
+ 		
+ 		margin: 0 auto;
+ 		width: 900px;
+ 		padding-left: 100px;
+ 		
+ 	}
+ 	
+ 		#secondaryNavigation ul {
+ 			
+ 			list-style: none;
+ 		
+ 		}
+ 		
+ 		#secondaryNavigation ul li a {
+ 			
+ 			text-decoration: none;
+ 			color: #464646;
+ 			
+ 		}
+ 		
+ 			#secondaryNavigation ul li a:hover {
+ 				
+ 				text-decoration: underline;
+ 				
+ 			}
+ 			
+ #banner {
+ 	
+ 	margin: 0 auto;
+ 	width: 1000px;
+ 	height: 200px;
+ 	text-align: center;
+ 	
+ }
+ 
+ 	#banner p {
+ 		
+ 		margin: 100px 0 0 0;
+ 		font-size: 200%;
+ 		font-family: 'Kotta One', serif;
+ 		text-shadow: 1px 1px 1px #555;
+ 		 		
+ 	}
+
+
+ #content {
+ 	
+ 	margin: 0 auto;
+ 	width: 1000px;
+ 	
+ }
+ 
+ 	#row {
+ 		
+ 		clear: both;
+ 		
+ 		
+ 	}
+ 	
+ 		#row ul {
+ 			
+ 			list-style: none;
+ 			
+ 		}
+ 		
+ 			#row ul li {
+ 				
+ 				float: left;
+ 				
+ 			}
+ 			
+ 				#row ul li div {
+ 				
+	 				height: 325px;
+	 				width: 250px;
+	 				background-color: #FFF;
+	 				padding: 15px;
+	 				margin: 0 10px 20px 10px;
+	 				border-radius: 5px;
+	 				-moz-border-radius: 5px;
+	 				
+	 			}
+	 				#row ul li div a {
+	 					
+	 					font-size: 82%;
+	 					color: #6469FA;
+	 					text-decoration: none;
+	 					
+	 				}
+	 				
+	 					#row ul li div a:hover {
+	 						
+	 						color: #9497FF;
+	 						
+	 						
+	 					}
+	 					
+	 				#row ul li div p {
+	 					
+	 					font-size: 75%;
+	 					
+	 				}
+ 			
+ 				
+ 	
+ 	#rowRow {
+ 		
+ 		clear: both;
+ 		
+ 	}
+ 	 		#rowRow ul {
+ 			
+ 			list-style: none;
+ 			
+ 		}
+ 		
+ 			#rowRow ul li {
+ 				
+ 				float: left;
+ 				
+ 			}
+ 			
+ 		#rowRow ul li div {
+ 			background: #FFF;
+ 			padding: 15px;
+ 			margin: 0 10px 20px; 10px;
+ 			border-radius: 5px;
+ 			-moz-border-radius: 5px;
+ 		}
+ 			
+			#rowRow ul li:first-child div {
+					
+					width: 550px;
+					height: 325px;
+					
+				}
+			#rowRow ul li:last-child div {
+				
+					width: 250px;
+					height: 325px;
+			}
+			
+		
+			
+ 	
+ 	#rowRowFightThePowa {
+ 		
+ 		clear:both;
+ 		
+ 	}
+ 	 		#rowRowFightThePowa ul {
+ 			
+ 			list-style: none;
+ 			
+ 		}
+ 		
+ 			#rowRowFightThePowa ul li {
+ 				
+ 				float: left;
+ 				
+ 			}
+ 			
+ 				#rowRowFightThePowa ul li div {
+ 					background: #FFF;
+		 			padding: 15px;
+		 			margin: 0 10px 20px; 10px;
+		 			border-radius: 5px;
+		 			-moz-border-radius: 5px;
+		 			width: 175px;
+		 			height: 200px;
+ 				}
