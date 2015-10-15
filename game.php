@@ -15,7 +15,6 @@
 	
 	
 	require $_SERVER["DOCUMENT_ROOT"] . "/games/select.php";
-	include $_SERVER["DOCUMENT_ROOT"] . "/crumpocolypse/connect.php";
  
 ?>
 
